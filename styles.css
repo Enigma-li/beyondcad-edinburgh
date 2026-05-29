@@ -159,9 +159,35 @@ a { color: inherit; text-decoration: none; }
   flex: 0 0 180px;
   font-size: 0.98rem;
 }
-.agenda-list span {
+.agenda-list span,
+.agenda-list .talk-entry {
   flex: 1 1 auto;
   color: var(--muted);
+}
+.talk-entry {
+  display: block;
+}
+.talk-speaker {
+  color: var(--muted);
+}
+.talk-details {
+  display: inline;
+}
+.talk-details summary {
+  display: inline;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 700;
+}
+.talk-details summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.talk-details p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-band {
